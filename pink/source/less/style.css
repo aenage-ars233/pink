@@ -40,3 +40,28 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  box-sizing: border-box;
+}
+.page__body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #283645;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}
+.page-header {
+  background: #283645;
+  color: #ffffff;
+}

@@ -1,0 +1,260 @@
+.page-header {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../img/arm.png") no-repeat center 176px/320px 286px,
+              @smaller_dark_blue url("../img/header-back.png") no-repeat center 0/320px 462px;
+  color: @basic_white;
+
+  @media (min-width: @tablet) {
+    width: 100%;
+    background: url("../img/arm@tablet.png") no-repeat center 184px/660px 545px,
+                @smaller_dark_blue url("../img/header-back@tablet.png") no-repeat center 0/660px 729px;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+    background: url("../img/arm@desktop.png") no-repeat center 208px/1050px 645px,
+                @smaller_dark_blue url("../img/header-back@desktop.png") no-repeat center 0/1200px 853px;
+    padding-bottom: 120px;
+  }
+}
+
+.page-header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 20px;
+  margin-bottom: 20px;
+  background-color: fade(@basic_black, 30%);
+
+  @media (min-width: @tablet) {
+    padding: 27px 20px 43px 20px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: @desktop) {
+    justify-content: space-between;
+    padding: 27px 130px 43px 130px;
+    margin-bottom: 114px;
+  }
+
+  &--active {
+    background-color: @smaller_dark_blue;
+  }
+}
+
+.page-header__menu-toggler {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
+  
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: @basic_white;
+    box-shadow: 0 11px 0 0 @basic_white, 0 22px 0 0 @basic_white;
+  }
+}
+
+.page-header__menu {
+  .list-reset();
+  display: none;
+
+  &--open {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-top: 1px solid @basic_black;
+    background-color: @smaller_dark_blue;
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    flex-wrap: wrap;
+    position: static;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.page-header__menu-link {
+  display: block;
+  border-top: 1px solid fade(@basic_white, 15%);
+  border-bottom: 1px solid @basic_black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (min-width: @desktop) {
+    border: none;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    color: @basic_red;
+  }
+
+  &:active {
+    color: fade(@basic_white, 30%);
+  }
+}
+
+.page-header__heading-container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1200px;
+  }
+}
+
+.page-header__heading {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 310px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+
+  @media (min-width: @tablet) {
+    width: 230px;
+    margin: 0;
+    margin-left: 55px;
+    margin-bottom: 39px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 300px;
+    margin-left: 130px;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.page-header__install-container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1200px;
+  }
+}
+
+.install {
+  padding: 28px 20px 38px 20px;
+  background-color: @dark_blue;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    margin-left: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 130px;
+  }
+}
+
+.install__link {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  border: 3px solid @basic_white;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  border-radius: 29px;
+  text-decoration: none;
+  text-align: center;
+  color: @basic_white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 67px;
+    font-size: 21px;
+  }
+
+  &:hover {
+    background-color: @basic_white;
+    color: @basic_red;
+  }
+
+  &:active {
+    background-color: @basic_white;
+    color: fade(@basic_red, 30%);
+  }
+}
+
+.install__links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  width: 280px;
+  .list-reset();
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 58px;
+  }
+}
+
+.install__ally {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
