@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <h1 class="visually-hidden">Приложение Пинк</h1>
+    <header class="page__header page-header">
+      <nav class="page-header__navigation">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="" alt="Логотип приложения Пинк">
+        </a>
+        <button class="page-header__menu-toggler">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="page-header__menu">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="index.html">главная</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="catalog.html">фотографии</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="form.html">конкурс</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="page-header__heading">Взгляните на жизнь иначе!</h2>
+      <div class="page-header__install install">
+        <a class="install__link" href="https://www.apple.com/app-store/">Скачать приложение</a>
+        <ul class="install__links-list">
+          <li class="install__links-item">
+            <a class="install__links-link" href="#">
+              <span class="visually-hidden">Скачать в App Store</span>
+              <img class="install__links-link-image" src="" alt="">
+            </a>
+          </li>
+          <li class="install__links-item">
+            <a class="install__links-link" href="#">
+              <span class="visually-hidden">Скачать в Play Market</span>
+              <img class="install__links-link-image" src="" alt="">
+            </a>
+          </li>
+          <li class="install__links-item">
+            <a class="install__links-link" href="#">
+              <span class="visually-hidden">Скачать в Microsoft Store</span>
+              <img class="install__links-link-image" src="" alt="">
+            </a>
+          </li>
+        </ul>
+        <p class="install__ally">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </header>
   </body>
 </html>
