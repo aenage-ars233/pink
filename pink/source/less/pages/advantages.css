@@ -1,0 +1,13 @@
+.advantages {
+  padding-top: 46px;
+  background: url("../img/advantages-grey-background.svg") no-repeat center 174px/100% 828px;
+}
+.advantages__start-text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 123px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
