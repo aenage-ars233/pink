@@ -487,3 +487,85 @@
     display: none;
   }
 }
+.effect {
+  display: none;
+}
+@media (min-width: 660px) {
+  .effect {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: -23px;
+    padding: 102px 20px 138px 330px;
+    background: #ffffff url("../img/clocks.png") no-repeat 20px 54px/238px 276px;
+  }
+}
+@media (min-width: 1200px) {
+  .effect {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 115px 166px 120px 500px;
+    background: #f2f2f2 url("../img/clocks.png") no-repeat 131px 17px/298px 345px;
+  }
+}
+.effect__content {
+  width: 660px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .effect__content {
+    width: 534px;
+  }
+}
+.effect__title {
+  margin: 0;
+  width: 168px;
+  margin-left: auto;
+  margin-right: 142px;
+  margin-bottom: 24px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .effect__title {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 27px;
+    line-height: 30px;
+  }
+  .effect__title br {
+    display: none;
+  }
+}
+.effect__description {
+  width: 308px;
+  margin-left: auto;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 1200px) {
+  .effect__description {
+    width: 534px;
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.effect__link {
+  display: block;
+  width: 306px;
+  margin-left: auto;
+  color: #d22856;
+}
+@media (min-width: 1200px) {
+  .effect__link {
+    width: 300px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

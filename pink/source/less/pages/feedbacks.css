@@ -1,0 +1,16 @@
+.feedbacks {
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px 20px 50px 20px;
+}
+.feedback__author {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  font-style: normal;
+}
+.feedback__author-name {
+  margin: 0;
+  text-align: center;
+}
