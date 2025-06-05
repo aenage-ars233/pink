@@ -1,0 +1,187 @@
+.rates {
+  padding: 127px 0 49px 0;
+  background: url("../img/advantages-grey-background.svg") no-repeat center 0/100% 506px;
+
+  @media (min-width: @tablet) {
+    padding: 114px 20px 70px 20px;
+    background: url("../img/advantages-grey-background@desktop.svg") no-repeat center 0/100% 534px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 159px 130px 98px 130px;
+    background: url("../img/rates-background@desktop.svg") no-repeat center 0/100% 534px;
+  }
+}
+
+.rates__table {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    width: 940px;
+  }
+}
+
+.table__header-parametres {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+    opacity: 0;
+  }
+}
+
+.table__header {
+  display: none;
+  grid-column: 1/-1;
+  background-color: @smaller_dark_blue;
+  color: @basic_white;
+
+  @media (min-width: @tablet) {
+    display: block;
+    border-left: 2px solid @special_white;
+    grid-column: auto;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.table__header-content {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet) {
+    width: 152px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 234px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+}
+
+.table__header-title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: @desktop) {
+    font-size: 18px;
+  }
+}
+
+.table__header-price {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: @desktop) {
+    font-size: 24px;
+  }
+}
+
+.table__parameter-name {
+  padding: 14px 10px 15px 42px;
+  border-bottom: 2px solid @basic_grey;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: @basic_white;
+
+  @media (min-width: @tablet) {
+    padding: 18px 15px 17px 15px;
+    border: 2px solid @special_white;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 13px 22px;
+    border-width: 1px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+
+.table__parameter {
+  display: none;
+  border-bottom: 2px solid @basic_grey;
+
+  @media (min-width: @tablet) {
+    display: block;
+    border: 2px solid @special_white;
+  }
+
+  @media (min-width: @desktop) {
+    border-width: 1px;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &--yes {
+    background: @basic_white url("../img/yes.svg") no-repeat center/31px 21px;
+  }
+
+  &--no {
+    background: @basic_white url("../img/no.svg") no-repeat center/27px 27px;
+  }
+}
+
+
+
+.rates__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.rates__control-button {
+  width: 6px;
+  height: 12px;
+  border: none;
+  background-color: fade(@smaller_dark_blue, 30%);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: fade(@smaller_dark_blue, 60%);
+  }
+
+  &:active {
+    background-color: fade(@smaller_dark_blue, 10%);
+  }
+
+  &--active {
+    height: 18px;
+    background-color: transparent;
+    border: 3px solid @smaller_dark_blue;
+  }
+}

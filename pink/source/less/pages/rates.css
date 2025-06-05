@@ -1,0 +1,21 @@
+.rates {
+  padding: 127px 0 49px 0;
+  background: url("../img/advantages-grey-background.svg") no-repeat center 0/100% 506px;
+}
+.rates__table {
+  outline: 1px solid red;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  margin: 0 auto;
+}
+.table__header-parametres {
+  display: none;
+}
+.table__header {
+  display: none;
+  grid-column: 1/-1;
+}
+.table__header--active {
+  display: block;
+}

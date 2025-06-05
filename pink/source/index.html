@@ -129,59 +129,62 @@
       </section>
       <section class="page__main-section rates">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="rates__table rates-table">
-          <tr>
-            <th class="visually-hidden">Параметры</th>
-            <th class="rates-table__rate">
-              <h3 class="rates-table__rate-title">База</h3>
-              <p class="rates-table__rate-price">1,99 USD</p>
-            </th>
-            <th class="rates-table__rate rates-table__rate--hit">
-              <h3 class="rates-table__rate-title">Стандарт</h3>
-              <p class="rates-table__rate-price">3,99 USD</p>
-            </th>
-            <th class="rates-table__rate">
-              <h3 class="rates-table__rate-title">Анлим</h3>
-              <p class="rates-table__rate-price">9,99 USD</p>
-            </th>
-          </tr>
-          <tr>
-            <td class="rates-table__cell parameter">Розовый фильтр</td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="rates-table__cell parameter">Смайлики</td>
-            <td class="rates-table__cell parameter--no">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="rates-table__cell parameter">Комментарии</td>
-            <td class="rates-table__cell parameter--no">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="rates-table__cell parameter--no">
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="rates-table__cell parameter--yes">
-              <span class="visually-hidden">Есть</span>
-            </td>
-          </tr>
-        </table>
+        <div class="rates__table table">
+          <div class="table__header-parametres">
+            <span class="visually-hidden">Параметры</span>
+          </div>
+          <div class="table__header">
+            <div class="table__header-content">
+              <h3 class="table__header-title">БАЗА</h3>
+              <p class="table__header-price">1,99 USD</p>
+            </div>
+          </div>
+          <div class="table__header table__header--active">
+            <div class="table__header-content table__header-content--hit">
+              <h3 class="table__header-title">СТАНДАРТ</h3>
+              <p class="table__header-price">3,99 USD</p>
+            </div>
+          </div>
+          <div class="table__header">
+            <div class="table__header-content">
+              <h3 class="table__header-title">АНЛИМ</h3>
+              <p class="table__header-price">3,99 USD</p>
+            </div>
+          </div>
+
+          <div class="table__parameter-name">Розовый фильтр</div>
+          <div class="table__parameter table__parameter--yes">
+            <span class="visually-hidden">Есть</span>
+          </div>
+          <div class="table__parameter table__parameter--yes table__parameter--active">
+            <span class="visually-hidden">Есть</span>
+          </div>
+          <div class="table__parameter table__parameter--yes">
+            <span class="visually-hidden">Есть</span>
+          </div>
+
+          <div class="table__parameter-name">Смайлики</div>
+          <div class="table__parameter table__parameter--no">
+            <span class="visually-hidden">Нет</span>
+          </div>
+          <div class="table__parameter table__parameter--yes table__parameter--active">
+            <span class="visually-hidden">Есть</span>
+          </div>
+          <div class="table__parameter table__parameter--yes">
+            <span class="visually-hidden">Есть</span>
+          </div>
+
+          <div class="table__parameter-name">Комментарии</div>
+          <div class="table__parameter table__parameter--no">
+            <span class="visually-hidden">Нет</span>
+          </div>
+          <div class="table__parameter table__parameter--no table__parameter--active">
+            <span class="visually-hidden">Есть</span>
+          </div>
+          <div class="table__parameter table__parameter--yes">
+            <span class="visually-hidden">Есть</span>
+          </div>
+        </div>
         <div class="rates__controls">
           <button class="rates__control-button" type="button">
             <span class="visually-hidden">Предыдущий тариф</span>
