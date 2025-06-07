@@ -59,20 +59,40 @@
 }
 
 .table__header-content {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   padding-top: 19px;
   padding-bottom: 35px;
+  border-left: 2px solid @basic_white;
+  border-right: 2px solid @basic_white;
+  overflow: hidden;
 
   @media (min-width: @tablet) {
-    width: 152px;
+    width: 182px;
     padding-bottom: 16px;
+    border: none;
   }
 
   @media (min-width: @desktop) {
     width: 234px;
     padding-top: 23px;
     padding-bottom: 25px;
+  }
+
+  &--hit::before {
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    display: block;
+    width: 114px;
+    content: "ХИТ";
+    background-color: @basic_red;
+    text-align: center;
+    color: @basic_white;
+    font-size: 14px;
+    line-height: 30px;
+    rotate: -45deg;
   }
 }
 

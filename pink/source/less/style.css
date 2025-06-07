@@ -573,7 +573,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
-  padding: 50px 20px 30px 20px;
+  padding: 50px 20px 20px 20px;
 }
 @media (min-width: 660px) {
   .feedbacks {
@@ -749,4 +749,206 @@
 .next-feedback:active path {
   fill: #283645;
   opacity: 0.1;
+}
+.rates {
+  padding: 127px 0 49px 0;
+  background: url("../img/advantages-grey-background.svg") no-repeat center 0/100% 506px;
+}
+@media (min-width: 660px) {
+  .rates {
+    padding: 114px 20px 70px 20px;
+    background: url("../img/advantages-grey-background@desktop.svg") no-repeat center 0/100% 534px;
+  }
+}
+@media (min-width: 1200px) {
+  .rates {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 159px 130px 98px 130px;
+    background: url("../img/rates-background@desktop.svg") no-repeat center 0/100% 534px;
+  }
+}
+.rates__table {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+@media (min-width: 660px) {
+  .rates__table {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .rates__table {
+    width: 940px;
+  }
+}
+.table__header-parametres {
+  display: none;
+}
+@media (min-width: 660px) {
+  .table__header-parametres {
+    display: block;
+    opacity: 0;
+  }
+}
+.table__header {
+  display: none;
+  grid-column: 1/-1;
+  background-color: #283645;
+  color: #ffffff;
+}
+@media (min-width: 660px) {
+  .table__header {
+    display: block;
+    border-left: 2px solid #f2f2f2;
+    grid-column: auto;
+  }
+}
+.table__header--active {
+  display: block;
+}
+.table__header-content {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 35px;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  overflow: hidden;
+}
+@media (min-width: 660px) {
+  .table__header-content {
+    width: 182px;
+    padding-bottom: 16px;
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .table__header-content {
+    width: 234px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+}
+.table__header-content--hit::before {
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  display: block;
+  width: 114px;
+  content: "ХИТ";
+  background-color: #d22856;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  rotate: -45deg;
+}
+.table__header-title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media (min-width: 1200px) {
+  .table__header-title {
+    font-size: 18px;
+  }
+}
+.table__header-price {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (min-width: 1200px) {
+  .table__header-price {
+    font-size: 24px;
+  }
+}
+.table__parameter-name {
+  padding: 14px 10px 15px 42px;
+  border-bottom: 2px solid #e5e5e5;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+@media (min-width: 660px) {
+  .table__parameter-name {
+    padding: 18px 15px 17px 15px;
+    border: 2px solid #f2f2f2;
+  }
+}
+@media (min-width: 1200px) {
+  .table__parameter-name {
+    padding: 13px 22px;
+    border-width: 1px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+.table__parameter {
+  display: none;
+  border-bottom: 2px solid #e5e5e5;
+}
+@media (min-width: 660px) {
+  .table__parameter {
+    display: block;
+    border: 2px solid #f2f2f2;
+  }
+}
+@media (min-width: 1200px) {
+  .table__parameter {
+    border-width: 1px;
+  }
+}
+.table__parameter--active {
+  display: block;
+}
+.table__parameter--yes {
+  background: #ffffff url("../img/yes.svg") no-repeat center / 31px 21px;
+}
+.table__parameter--no {
+  background: #ffffff url("../img/no.svg") no-repeat center / 27px 27px;
+}
+.rates__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .rates__controls {
+    display: none;
+  }
+}
+.rates__control-button {
+  width: 6px;
+  height: 12px;
+  border: none;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+}
+.rates__control-button:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+.rates__control-button:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+.rates__control-button--active {
+  height: 18px;
+  background-color: transparent;
+  border: 3px solid #283645;
 }

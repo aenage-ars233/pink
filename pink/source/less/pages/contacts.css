@@ -1,0 +1,22 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+.contacts__content {
+  outline: 1px solid green;
+  margin-top: -30px;
+  padding: 30px 20px 22px 20px;
+}
+.contacts__heading {
+  width: 222px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+.contacts__list {
+  width: 280px;
+  margin: 0 auto;
+}
