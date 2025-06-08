@@ -1261,3 +1261,51 @@
     font-size: 18px;
   }
 }
+.catalog-main {
+  padding-top: 54px;
+}
+@media (min-width: 660px) {
+  .catalog-main {
+    padding-top: 100px;
+  }
+}
+.page-main__text {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 30px;
+}
+@media (min-width: 660px) {
+  .page-main__text {
+    width: 520px;
+    margin-bottom: 85px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-main__text {
+    width: 572px;
+    margin-bottom: 97px;
+  }
+}
+.page__main-text-2 {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  text-align: center;
+  line-height: 30px;
+}
+@media (min-width: 660px) {
+  .page__main-text-2 {
+    width: 620px;
+    margin-bottom: 78px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .page__main-text-2 {
+    width: 422px;
+    margin-bottom: 75px;
+  }
+}
