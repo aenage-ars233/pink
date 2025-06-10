@@ -48,6 +48,7 @@
   }
 
   &--panorama {
+    position: relative;
     @media (min-width: @tablet) {
       position: relative;
       width: 620px;
@@ -56,6 +57,28 @@
 
     @media (min-width: @desktop) {
       width: 940px;
+    }
+  }
+
+  &--panorama::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "ПАНОРАМА ДНЯ";
+    width: 140px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background-color: @basic_red;
+    color: @basic_white;
+    font-weight: 700;
+    font-size: 12px;
+
+    @media (min-width: @tablet) {
+      top: 57px;
+    }
+
+    @media (min-width: @desktop) {
+      top: 54px;
     }
   }
 }
