@@ -1,0 +1,99 @@
+.application {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  padding: 111px 20px 42px 20px;
+  border: none;
+  background-color: @special_white;
+
+  @media (min-width: @tablet) {
+    order: 2;
+    width: 616px;
+    margin-bottom: 51px;
+    border: 2px solid @basic_grey;
+    padding: 0 60px 54px 60px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column: 2/3;
+    width: 431px;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    padding-right: 20px;
+  }
+}
+
+.application__heading {
+  position: relative;
+  top: 65px;
+  width: 188px;
+  margin: 0 auto;
+  color: @basic_red;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    position: static;
+    width: 368px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.application__label {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @desktop) {
+    margin-left: 64px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+.radio-visually {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 37px;
+  margin-right: 31px;
+  border: 2px solid @basic_grey;
+  background-color: @basic_white;
+  border-radius: 50%;
+
+  @media (min-width: @tablet) {
+    margin-right: 22px;
+  }
+}
+
+.application__label > input:checked + .radio-visually::before {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: @basic_red;
+  border-radius: 50%;
+}
+
+.application__label:hover .radio-visually {
+  border-color: @smaller_dark_blue;
+}
+
+.application__label:active .radio-visually {
+  border-color: @basic_red;
+}
+
+.application__text {
+  font-size: 18px;
+  line-height: 30px;
+}

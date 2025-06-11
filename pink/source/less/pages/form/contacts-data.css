@@ -1,0 +1,10 @@
+.contacts-data {
+  margin-bottom: 44px;
+  border: none;
+}
+.contacts-data__label {
+  display: block;
+}
+.contacts-data__label:not(:last-child) {
+  margin-bottom: 29px;
+}

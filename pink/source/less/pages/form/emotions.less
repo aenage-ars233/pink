@@ -1,0 +1,49 @@
+.emotions {
+  width: 276px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  border: none;
+
+  @media (min-width: @tablet) {
+    order: 5;
+    width: 616px;
+    margin-bottom: 70px;
+    border: 2px solid @basic_grey;
+    padding: 0 60px 53px 60px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 940px;
+    margin-bottom: 0;
+    padding-bottom: 45px;
+  }
+}
+
+.emotions__heading {
+  width: 195px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic_red;
+
+  @media (min-width: @tablet) {
+    width: 260px;
+    margin-bottom: 28px;
+  }
+}
+
+.emotions__input {
+  width: 100%;
+  border: 2px solid @basic_grey;
+  padding: 13px 15px 22px 20px;
+  font-family: inherit;
+  color: @smaller_dark_blue;
+  font-size: 18px;
+  line-height: 30px;
+  resize: none;
+
+  &::placeholder {
+    color: inherit;
+  }
+}

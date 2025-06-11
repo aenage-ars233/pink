@@ -1,0 +1,15 @@
+.contacts-name {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  border: none;
+}
+.contact-name__label {
+  display: block;
+  margin-bottom: 29px;
+}
+.contact-name__label-text {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 17px;
+}

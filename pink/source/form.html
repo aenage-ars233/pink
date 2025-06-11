@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device.width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>Конкурс</title>
   </head>
   <body class="page__body">
@@ -30,11 +31,13 @@
         </ul>
       </nav>
       <div class="page-header__content page-header__content--form">
-        <h1 class="page__heading catalog-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page__heading form-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="page__main form-main">
-      <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span>Пожалуйста, заполните форму ниже:</span>
+      </p>
       <form class="form-main__form form" method="post" action="">
         <fieldset class="form__section contacts-name">
           <legend class="visually-hidden">ФИО</legend>
@@ -54,38 +57,62 @@
         <fieldset class="form__section achievements">
           <legend class="achievements__heading">Ваши безбашенные достижения в путешествии</legend>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="selfi" checked>
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="selfi" checked>
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Сделал селфи с акулой</span>
           </label>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="beach" checked>
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="beach" checked>
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Обгорел на пляже</span>
           </label>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="Chack-Norris">
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="Chack-Norris">
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Видел Чака Норриса</span>
           </label>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="buy">
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="buy">
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Накупил сувениров</span>
           </label>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="tower" checked>
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="tower" checked>
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Удержал башню</span>
           </label>
           <label class="achievements__label">
-            <input class="" type="checkbox" name="hotel">
-            <span class="checkbox__visually"></span>
+            <input class="visually-hidden" type="checkbox" name="hotel">
+            <span class="checkbox__visually">
+              <svg class="checkbox__visually-tick" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7001 0.284331C21.5105 0.102082 21.2557 0 20.9903 0C20.7249 0 20.47 0.102082 20.2805 0.284331L6.70324 13.6028L1.73472 8.72901C1.64045 8.63578 1.52831 8.56178 1.40474 8.51128C1.28118 8.46079 1.14865 8.43479 1.01479 8.43479C0.88093 8.43479 0.748397 8.46079 0.624833 8.51128C0.50127 8.56178 0.389122 8.63578 0.294859 8.72901C0.106004 8.91537 0 9.16747 0 9.43024C0 9.69302 0.106004 9.94512 0.294859 10.1315L5.98331 15.7115C6.07806 15.8037 6.19042 15.8767 6.31396 15.9262C6.4375 15.9756 6.56979 16.0007 6.70324 16C6.96925 15.9989 7.22416 15.8953 7.41303 15.7115L21.7001 1.69675C21.7951 1.60428 21.8705 1.49427 21.922 1.37306C21.9735 1.25186 22 1.12185 22 0.990541C22 0.859234 21.9735 0.729226 21.922 0.608017C21.8705 0.486809 21.7951 0.376798 21.7001 0.284331Z" fill="#D22856"/>
+              </svg>
+            </span>
             <span class="achievements__text">Разгромил отель</span>
           </label>
         </fieldset>
         <fieldset class="form__section contacts-data">
-          <legend class="visually-hidden">Контактные данные</legend>
+          <legend class="contacts-data__heading">Контактная информация</legend>
           <label class="contacts-data__label">
             <span class="contacts-data__label-text">НОМЕР ТЕЛЕФОНА</span>
             <input class="contacts-data__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -98,24 +125,24 @@
         <fieldset class="form__section application">
           <legend class="application__heading">С каким приложением путешествовали?</legend>
           <label class="application__label">
-            <input class="" type="radio" name="application" checked>
+            <input class="visually-hidden" type="radio" name="application" checked>
             <span class="radio-visually"></span>
             <span class="application__text">Pink для iOS</span>
           </label>
           <label class="application__label">
-            <input class="" type="radio" name="application">
+            <input class="visually-hidden" type="radio" name="application">
             <span class="radio-visually"></span>
             <span class="application__text">Pink на Android</span>
           </label>
           <label class="application__label">
-            <input class="" type="radio" name="application">
+            <input class="visually-hidden" type="radio" name="application">
             <span class="radio-visually"></span>
             <span class="application__text">Windows Phone</span>
           </label>
         </fieldset>
         <fieldset class="form__section emotions">
           <legend class="emotions__heading">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-          <textarea class="emotions__input" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="7"></textarea>
+          <textarea class="emotions__input" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
         </fieldset>
         <p class="form__controls">
           <button class="form__submit" type="submit">Отправить форму</button>
@@ -160,5 +187,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

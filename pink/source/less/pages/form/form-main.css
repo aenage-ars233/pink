@@ -1,0 +1,10 @@
+.form-main {
+  padding-top: 44px;
+}
+.form-main__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: center;
+  line-height: 30px;
+}
