@@ -16,7 +16,11 @@
     <header class="page__header page-header">
       <nav class="page-header__navigation">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="img/header-logo.svg" alt="Логотип приложения Пинк" width="74" height="23">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/header-logo-desktop.svg" width="147" height="40">
+            <source media="(min-width: 660px)" srcset="img/header-logo-tablet.svg" width="145" height="40">
+            <img class="page-header__logo-image" src="img/header-logo-mobile.svg" alt="Логотип приложения Пинк" width="74" height="23">
+          </picture>
         </a>
         <button class="page-header__menu-toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -72,22 +76,22 @@
         <p class="advantages__start-text">Устали от серости<br> мегаполиса?<br><br> Нам есть, что вам<br> предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/grey-day.png" alt="Пасмурный, серый день." width="296" height="382">
+            <img class="advantages__item-image" loading="lazy" src="img/grey-day.png" srcset="img/grey-day@2x.png 2x" alt="Пасмурный, серый день." width="296" height="382">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/pink-day.png" alt="Розовый фильтр." width="296" height="382">
+            <img class="advantages__item-image" loading="lazy" src="img/pink-day.png" srcset="img/pink-day@2x.png 2x" alt="Розовый фильтр." width="296" height="382">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/super-day.png" alt="Добавление смайлика и подписи." width="296" height="382">
+            <img class="advantages__item-image" loading="lazy" src="img/super-day.png" srcset="img/super-day@2x.png 2x" alt="Добавление смайлика и подписи." width="296" height="382">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__image" loading="lazy" src="img/advantages-main-image.png" alt="Красивая розовая картинка со смайликом и подписью." width="157" height="320">
+        <img class="advantages__image" loading="lazy" src="img/advantages-main-image.png" srcset="img/advantages-main-image@2x.png 2x" alt="Красивая розовая картинка со смайликом и подписью." width="157" height="320">
       </section>
       <section class="page__main-section effect">
         <div class="effect__content">
@@ -225,7 +229,10 @@
     </main>
     <footer class="page__footer page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Логотип приложения Пинк." width="145" height="40">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/footer-logo-desktop.svg" width="147" height="40">
+          <img class="page-footer__logo-image" src="img/footer-logo-mobile.svg" alt="Логотип приложения Пинк." width="145" height="40">
+        </picture>
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__item">

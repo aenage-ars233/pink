@@ -1,21 +1,19 @@
 .page-header {
   width: 100%;
   margin: 0 auto;
-  background: url("../img/arm.png") no-repeat center 176px/320px 286px,
-              @smaller_dark_blue url("../img/header-back.png") no-repeat center 0/320px 462px;
+  background: image-set(url("../img/arm-mobile.png") 1x, url("../img/arm-mobile@2x.png") 2x) no-repeat center 176px/320px 286px,
+              @smaller_dark_blue image-set(url("../img/header-back-mobile.png") 1x, url("../img/header-back-mobile@2x.png") 2x) no-repeat center 0/320px 462px;
   color: @basic_white;
 
   @media (min-width: @tablet) {
-    width: 100%;
-    background: url("../img/arm@tablet.png") no-repeat center 184px/660px 545px,
-                @smaller_dark_blue url("../img/header-back@tablet.png") no-repeat center 0/660px 729px;
+    background: image-set(url("../img/arm-tablet.png") 1x, url("../img/arm-tablet@2x.png") 2x) no-repeat center 184px/660px 545px,
+                @smaller_dark_blue image-set(url("../img/header-back-tablet.png") 1x, url("../img/header-back-tablet@2x.png") 2x) no-repeat center 0/660px 729px;
     padding-bottom: 87px;
   }
 
   @media (min-width: @desktop) {
-    width: 100%;
-    background: url("../img/arm@desktop.png") no-repeat center 208px/1050px 645px,
-                @smaller_dark_blue url("../img/header-back@desktop.png") no-repeat center 0/1200px 853px;
+    background: image-set(url("../img/arm-desktop.png") 1x, url("../img/arm-desktop@2x.png") 2x) no-repeat center 208px/1050px 645px,
+                @smaller_dark_blue image-set(url("../img/header-back-desktop.png") 1x, url("../img/header-back-desktop@2x.png") 2x) no-repeat center 0/1200px 853px;
     padding-bottom: 120px;
   }
 
@@ -103,6 +101,10 @@
     width: 100%;
     border-top: 1px solid @basic_black;
     background-color: @smaller_dark_blue;
+  }
+
+  @media (min-width: @tablet) {
+    top: 110px;
   }
 
   @media (min-width: @desktop) {
