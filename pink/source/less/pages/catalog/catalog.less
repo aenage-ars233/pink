@@ -92,11 +92,12 @@
   @media (min-width: @tablet) {
     margin: 0;
     margin-bottom: 30px;
-    margin-left: -20px;
+    margin-left: -30px;
   }
 
   @media (min-width: @desktop) {
     margin-bottom: 32px;
+    margin-left: -27px;
   }
 
   &--panorama {
@@ -104,7 +105,12 @@
 
     @media (min-width: @tablet) {
       margin: 0;
+      margin-left: -50px;
       margin-bottom: 30px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: -150px;
     }
   }
 }
@@ -142,8 +148,13 @@
   &--panorama {
     @media (min-width: @tablet) {
       position: absolute;
-      top: 166px;
+      top: 536px;
       left: 471px;
+    }
+
+    @media (min-width: @desktop) {
+      left: auto;
+      right: 11px;
     }
   }
 }

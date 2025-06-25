@@ -95,6 +95,7 @@
 
   @media (min-width: @tablet) {
     margin-bottom: 12px;
+    padding-right: 79px;
   }
 
   &::placeholder {
@@ -102,5 +103,17 @@
     font-family: inherit;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.contacts-data__input[type="tel"] {
+  @media (min-width: @tablet) {
+    background: url("../img/form/tel.jpg") no-repeat 100% 0/59px 59px;
+  }
+}
+
+.contacts-data__input[type="email"] {
+  @media (min-width: @tablet) {
+    background: url("../img/form/email.jpg") no-repeat 100% 0/59px 59px;
   }
 }
