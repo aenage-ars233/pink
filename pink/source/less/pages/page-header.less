@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 20px;
+  padding: 21px 22px;
   margin-bottom: 20px;
   background-color: fade(@basic_black, 30%);
 
@@ -63,6 +63,18 @@
 
   &--active {
     background-color: @smaller_dark_blue;
+  }
+}
+
+.page-header__logo {
+  color: @basic_white;
+
+  &:hover {
+    color: @basic_red;
+  }
+
+  &:active {
+    color: rgba(@basic_white, 0.3);
   }
 }
 
@@ -85,7 +97,7 @@
     width: 50px;
     height: 5px;
     background-color: @basic_white;
-    box-shadow: 0 11px 0 0 @basic_white, 0 22px 0 0 @basic_white;
+    box-shadow: 0 10px 0 0 @basic_white, 0 20px 0 0 @basic_white;
   }
 }
 
@@ -227,7 +239,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   border: 3px solid @basic_white;
   padding-top: 20px;
   padding-bottom: 18px;
@@ -269,7 +281,7 @@
   width: 280px;
   .list-reset();
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet) {
     margin-bottom: 38px;
@@ -344,5 +356,29 @@
 
   @media (min-width: @desktop) {
     width: 747px;
+  }
+}
+
+.logo-mobile {
+  display: none;
+
+  @media (max-width: @tablet) {
+    display: block;
+  }
+}
+
+.logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet) and (max-width: @desktop) {
+    display: block;
+  }
+}
+
+.logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
   }
 }
