@@ -144,16 +144,15 @@
     display: block;
     background-color: transparent;
     border: none;
+    color: #283645;
   }
 
-  &:hover path {
-    fill: @smaller_dark_blue;
-    opacity: 0.6;
+  &:hover {
+    color: rgba(@smaller_dark_blue, 0.6);
   }
 
-  &:active path {
-    fill: @smaller_dark_blue;
-    opacity: 0.1;
+  &:active {
+    color: rgba(@smaller_dark_blue, 0.3);
   }
 }
 
@@ -172,13 +171,11 @@
     transform: rotate(180deg);
   }
 
-  &:hover path {
-    fill: @smaller_dark_blue;
-    opacity: 0.6;
+  &:hover {
+    color: rgba(@smaller_dark_blue, 0.6);
   }
 
-  &:active path {
-    fill: @smaller_dark_blue;
-    opacity: 0.1;
+  &:active {
+    color: rgba(@smaller_dark_blue, 0.3);
   }
 }
