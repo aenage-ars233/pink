@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
     <title>Пинк</title>
   </head>
   <body class="page__body">
@@ -20,7 +22,7 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
     <header class="page__header page-header">
       <nav class="page-header__navigation">
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo" href="#">
           <svg class="logo-mobile" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" fill="currentColor"/>
             <path d="M21.5935 1.38904C21.5779 1.21262 21.5991 1.03487 21.6556 0.867114C21.7122 0.699353 21.803 0.545245 21.9221 0.414596C22.0412 0.283947 22.1862 0.179616 22.3477 0.108238C22.5092 0.0368607 22.6837 0 22.8602 0C23.0366 0 23.2112 0.0368607 23.3727 0.108238C23.5342 0.179616 23.6791 0.283947 23.7982 0.414596C23.9174 0.545245 24.0081 0.699353 24.0647 0.867114C24.1213 1.03487 24.1425 1.21262 24.1269 1.38904V21.611C24.1425 21.7874 24.1213 21.9651 24.0647 22.1329C24.0081 22.3006 23.9174 22.4548 23.7982 22.5854C23.6791 22.7161 23.5342 22.8204 23.3727 22.8918C23.2112 22.9631 23.0366 23 22.8602 23C22.6837 23 22.5092 22.9631 22.3477 22.8918C22.1862 22.8204 22.0412 22.7161 21.9221 22.5854C21.803 22.4548 21.7122 22.3006 21.6556 22.1329C21.5991 21.9651 21.5779 21.7874 21.5935 21.611V1.38904Z" fill="currentColor"/>
@@ -48,6 +50,7 @@
               <path d="M98.94 9.74563C97.9748 9.74563 97.0489 9.36936 96.3655 8.69932C95.682 8.02927 95.2967 7.12014 95.2941 6.17125C95.2941 7.11923 94.911 8.02839 94.2292 8.69872C93.5473 9.36905 92.6225 9.74563 91.6582 9.74563C92.6234 9.74825 93.5482 10.127 94.2298 10.7989C94.9113 11.4708 95.2941 12.381 95.2941 13.3299C95.2967 12.3801 95.6817 11.4699 96.3649 10.7983C97.048 10.1267 97.9739 9.74824 98.94 9.74563Z" fill="#D22856"/>
             </g>
           </svg>
+          <span class="visually-hidden">Логотип приложения Пинк</span>
         </a>
         <button class="page-header__menu-toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -103,17 +106,26 @@
         <p class="advantages__start-text">Устали от серости мегаполиса?<br><br> Нам есть, что вам<br> предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/grey-day.png" srcset="img/grey-day@2x.png 2x" alt="Пасмурный, серый день." width="296" height="382">
+            <picture>
+              <source type="image/webp" srcset="img/grey-day.webp 1x, img/grey-day@2x.webp 2x">
+              <img class="advantages__item-image" loading="lazy" src="img/grey-day.png" srcset="img/grey-day@2x.png 2x" alt="Пасмурный, серый день." width="296" height="382">
+            </picture>
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/pink-day.png" srcset="img/pink-day@2x.png 2x" alt="Розовый фильтр." width="296" height="382">
+            <picture>
+              <source type="image/webp" srcset="img/pink-day.webp 1x, img/pink-day@2x.webp 2x">
+              <img class="advantages__item-image" loading="lazy" src="img/pink-day.png" srcset="img/pink-day@2x.png 2x" alt="Розовый фильтр." width="296" height="382">
+            </picture>
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item-image" loading="lazy" src="img/super-day.png" srcset="img/super-day@2x.png 2x" alt="Добавление смайлика и подписи." width="296" height="382">
+            <picture>
+              <source type="image/webp" srcset="img/super-day.webp 1x, img/super-day@2x.webp 2x">
+              <img class="advantages__item-image" loading="lazy" src="img/super-day.png" srcset="img/super-day@2x.png 2x" alt="Добавление смайлика и подписи." width="296" height="382">
+            </picture>
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
